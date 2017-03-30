@@ -3,7 +3,7 @@ layout: group
 title: Github Workflow
 tags: [ meta ]
 img: git-workflow.jpg
-short-description: Recommended practice for Github workflow
+short-description: Recommended practice for Github workflow.
 front: true
 ---
 

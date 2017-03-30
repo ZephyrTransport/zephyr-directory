@@ -18,15 +18,13 @@ subTitle: Hope you find what you are looking for.
 {% for group in site.project-groups %}
   	{% if group.front %}
   	<div>
+  	<a href= {{ site.baseurl }}{{ group.url }}>
   	<div class="card square-card">
   		<div class="card-block">
     		<h6 class="card-title">{{ group.title }}</h6>
-    	
-			<div class="card-text">
-				<p>{{ group.short-description }}</p>
-			</div>
 		</div>
 	</div>
+	</a>
 	</div>
   	{% endif %}
 {% endfor %}
@@ -49,7 +47,7 @@ subTitle: Hope you find what you are looking for.
 	<!-- Side Widget Well -->
 	<div>
 		<h3>Updates</h3>
-		<p class="side-bar">This site is a work in progress.  We welcome feedback on how to make it most helpful.</p>
+		<p class="side-bar">This site is a work in progress.  We welcome feedback on how to make it more helpful.</p>
 	</div>
 
 </div>

@@ -1,18 +1,87 @@
 <!DOCTYPE HTML>
+<html>
+{% include head.html %}
 
-	{% include head.html %}
+<body>
+{% include nav.html %}
 
-	<body>
-	<!-- Wrapper -->
-		<div id="wrapper">
-		{% include nav.html %}
-			<div id="main">
-			<div class="inner">
-        {{ content }}
-        	</div>
-        	</div>
-		{% include footer.html %}
-		{% include js.html %}
+<div class="container-fluid" id="main">
+<div class="row">
+<div class="col-md-9">
+
+	<h3><p class="zephyr">{{ page.title }}</p></h3>	
+	
+	<section id="project-groups">
+		<div class="card-deck">									
+		{% for group in site.project-groups %}
+		{% if group.tags contains page.category %}
+		{% if page.category != group.category %}
+  			<div>
+  				<a href={{ site.baseurl }}{{ group.url }}>
+  				<div class="card square-card">
+  					<div class="card-block">
+    					<h6 class="card-title">{{ group.title }}</h6>
+					</div>
+				</div>
+				</a>
+			</div>
+		{% endif %}
+  		{% endif %}
+		{% endfor %}
 		</div>
-	</body>
+	</section>
+	
+	<section id="projects">	
+		<div class="card-deck">									
+		{% for project in site.projects %}
+		{% if project.tags contains page.category %}
+  			<div>
+  				<a href={{ site.baseurl }}{{ project.url }}>
+  				<div class="card square-card">
+  					<div class="card-block">
+    					<h6 class="card-title">{{ project.title }}</h6>
+					</div>
+				</div>
+				</a>
+			</div>
+  		{% endif %}
+		{% endfor %}
+		</div>
+	</section>
+	
+	<section id="additional-content">
+	{{ content }}
+	</section>
+	
+</div>
+
+<div class="col-md-3">
+	<div>
+	<h3><p class="zephyr">Related Articles</p></h3>											
+		{% for article in site.articles %}
+  		{% if article.tags contains group.category %}
+    	<h6 class="zephyr"><a href={{ site.baseurl }}{{ article.url }}>{{ article.title }}</a></h6>
+		<p class="caption">{{ article.short-description }}</p>
+  		{% endif %}
+		{% endfor %}
+	</div>
+	<div>
+	<h3><p class="zephyr">Other Categories</p></h3>											
+		{% for group in site.project-groups %}
+  		{% if page.category != group.category %}
+    	<h6 class="zephyr"><a href={{ site.baseurl }}{{ group.url }}>{{ group.title }}</a></h6>
+		<p class="caption">{{ group.short-description }}</p>
+  		{% endif %}
+		{% endfor %}
+	</div>
+</div>
+        
+</div>
+
+
+
+{% include footer.html %}
+{% include js.html %}
+
+</body>
 </html>

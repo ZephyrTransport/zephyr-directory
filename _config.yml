@@ -12,7 +12,7 @@ email: info@zephyrtransport.org
 author: Elizabeth Sall
 description: The Zephyr Foundation’s mission is to advance rigorous transportation and land use decision-making for the public good by advocating for and supporting improved travel analysis and facilitating its implementation. 
 copyright: 'Copyright &copy; 2016 Zephyr Foundation. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+credits: 'Site created by Elizabeth Sall, UrbanLabs LLC'
 
 collections:
     articles:
@@ -30,8 +30,8 @@ collections:
 #   Look Settings         #
 # ----------------------- #
 
-top-bg-img: tunnel-swoosh-bg.jpg
-bottom-bh-img: nyc-bg.jpg
+top-bg-img: 
+bottom-bh-img: 
 highlight-color: 00aced         #turquoise blue
 dark-gray-color: 2F4F4F         #dark gray
 background-highlight: fafafa    #light gray - blueish
@@ -48,7 +48,7 @@ markdown: kramdown
 permalink: pretty
 
 # ----------------------- #
-#   3rd Party Settings    #
+#   Social                #
 # ----------------------- #
 
 social:
