@@ -47,14 +47,6 @@ p {
 NavBar
 */
 
-.logo img {
-	width: 50px;
-	height: 50px;
-}
-
-.anavbar {
-    padding: 10px 0;
-}
 
 .logo {
 	color: #00aced;
@@ -66,7 +58,7 @@ Body
 
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 80px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 /* 
