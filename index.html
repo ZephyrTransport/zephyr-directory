@@ -8,43 +8,37 @@ subTitle: Hope you find what you are looking for.
 <div class="row">
 
 <div class="col-md-8">
-<h3 class="zephyr">Welcome </h3>
+<h4 class="zephyr">Welcome </h4>
 <p>to the Zephyr Open Code Directory for Transportation Analysis.<br>  Below you will find articles to help you navigate using, contributing, and managing open source code projects as well as many projects that we think could be broadly helpful to the transportation analysis community.
 </p>
 
 <section id="projects">
 <h3><p class="zephyr">Open-Source Code</p></h3>		
-<div class="card-block">									
+<div class="card-deck">									
 {% for group in site.project-groups %}
   	{% if group.front %}
-  	
-  	<div class="card" style="width: 20rem;">
+  	<div>
+  	<div class="card square-card">
   		<div class="card-block">
-    		<h4 class="card-title">{{ group.title }}</h4>
+    		<h6 class="card-title">{{ group.title }}</h6>
     	
 			<div class="card-text">
 				<p>{{ group.short-description }}</p>
 			</div>
-			<a href="#" class="btn btn-primary">Go somewhere</a>
 		</div>
-
-  
-  	</div>
+	</div>
+	</div>
   	{% endif %}
 {% endfor %}
 </div>
 </section>
 
-
-
-
 </div>
-
 
 <div class="col-md-4">
 	<!-- Blog Categories Well -->
-	 <div class="well">
-	 	<h3 class="zephyr">Getting Started</h3>
+	 <div>
+	 	<h3>Getting Started</h3>
 			{% for article in site.articles %}
   			{% if article.front %}
     				<h6 class="zephyr"><a href={{ article.url }}>{{ article.title }}</a></h6>
@@ -53,13 +47,14 @@ subTitle: Hope you find what you are looking for.
 			{% endfor %}
 	</div>
 	<!-- Side Widget Well -->
-	<div class="well">
-		<h3 class="zephyr">Updates</h3>
+	<div>
+		<h3>Updates</h3>
 		<p class="side-bar">This site is a work in progress.  We welcome feedback on how to make it most helpful.</p>
 	</div>
 
 </div>
 <!-- /.col-md-4 -->
+
 
 </div>
 <!-- /.row -->

@@ -12,15 +12,20 @@ p {
 	line-height: 1.75;
 }
 
+h1,h2,h3,h4 {
+	font-family: "Nova Square";
+	text-transform: uppercase;
+}
+
+h5,h6 {
+	font-family: "Roboto";
+	font-weight: 300;
+}
+
 .caption {
 	font-size: 10pt;
 }
 
-.z-card {
-	background-color: #ADD8E6;
-	height: 200px;
-	width: 200px;
-}
 
 .side-bar  {
 	font-size: 12pt;
@@ -66,13 +71,55 @@ Footer
 */
 
 footer {
-    margin: 50px 0;
+    padding: 1rem 0;
+    margin-top: 0.25rem;
+    background-color: #f7f7f7;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.btn-outline {
+    margin-top: 15px;
+    margin-right: 2px;
+    border: solid 2px #585858;
+    font-size: 20px;
+    color: #585858;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #{{ site.color.primary }};
+    background: #fff;
 }
 
 /* 
 Items
 */
 
-.portfolio-item {
-    margin-bottom: 25px;
+.square-card {
+    margin: 5px 5px 5px 5px;
+    height: 10rem;
+    width: 10rem;
+    background-color: #f7f7f7;
 }
+
