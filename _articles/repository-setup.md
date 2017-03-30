@@ -1,5 +1,5 @@
 ---
-layout: group
+layout: article
 title: Github Repository Organization
 tags: [ meta ]
 short-description: Best practices for organizing your GitHub repositories. 

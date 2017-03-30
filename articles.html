@@ -1,0 +1,27 @@
+---
+layout: front
+title: Articles
+subTitle: Hope you find what you are looking for.
+---
+
+
+<section id="articles">
+<h3>Articles</h3>		
+<div class="card-columns">									
+	{% for article in site.articles %}
+  	<div>
+  	<a href= {{ site.baseurl }}{{ article.url }}>
+  	<div class="card">
+  		<div class="card-block">
+    		<h6 class="card-title">{{ article.title }}</h6>
+    		<p>&nbsp; &raquo; &nbsp; {{ article.short-description }}</p>
+		</div>
+	</div>
+	</a>
+	</div>
+	{% endfor %}
+</div>
+</section>
+							
+
+

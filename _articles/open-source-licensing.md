@@ -1,5 +1,5 @@
 ---
-layout: group
+layout: article
 title: Open Source Licensing
 tags: [ meta ]
 img: license-wordcloud.jpg

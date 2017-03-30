@@ -1,5 +1,5 @@
 ---
-layout: group
+layout: article
 title: Github Workflow
 tags: [ meta ]
 img: git-workflow.jpg

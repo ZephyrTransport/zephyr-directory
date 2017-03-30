@@ -1,5 +1,5 @@
 ---
-layout: group
+layout: article
 title: Adding a Project
 tags: [ meta ]
 img: license-wordcloud.jpg
