@@ -52,10 +52,13 @@ NavBar
 	height: 50px;
 }
 
-.navbar {
+.anavbar {
     padding: 10px 0;
 }
 
+.logo {
+	color: #00aced;
+}
 
 /* 
 Body
