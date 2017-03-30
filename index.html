@@ -39,7 +39,7 @@ subTitle: Hope you find what you are looking for.
 	 	<h3>Getting Started</h3>
 			{% for article in site.articles %}
   			{% if article.front %}
-    				<h6 class="zephyr"><a href={{ article.url }}>{{ article.title }}</a></h6>
+    				<h6 class="zephyr"><a href={{ site.baseurl }}{{ article.url }}>{{ article.title }}</a></h6>
 					<p class="caption">{{ article.short-description }}</p>
   			{% endif %}
 			{% endfor %}
