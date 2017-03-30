@@ -1,0 +1,83 @@
+/*!
+ * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+p {
+	color: #585858;
+	font-family: Lato,"Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: 300;
+	line-height: 1.75;
+}
+
+.caption {
+	font-size: 10pt;
+}
+
+.z-card {
+	background-color: #ADD8E6;
+	height: 200px;
+	width: 200px;
+}
+
+.side-bar  {
+	font-size: 12pt;
+}
+
+.zephyr {
+	font-family: "Nova Square";
+	text-transform: uppercase;
+}
+	
+.stretch {
+	letter-spacing: 20px;
+}
+	
+.no-stretch {
+		     font-stetch: normal;
+}
+	
+.condensed {
+		     font-stetch: ultra-condensed;
+}
+
+/* 
+NavBar
+*/
+
+.logo img {
+	width: 50px;
+	height: 50px;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+
+/* 
+Body
+*/
+
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* 
+Footer
+*/
+
+footer {
+    margin: 50px 0;
+}
+
+/* 
+Items
+*/
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
