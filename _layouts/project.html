@@ -19,12 +19,18 @@
 
 <div class="col-md-3">
 	<div>
+	<!-- Create empty arrays -->
 	<h3><p class="zephyr">Related Projects</p></h3>											
 		{% for project in site.projects %}
 		{% for ptag in page.tags %}
+		{% if project.title != page.title %}
+		{% if project.title != prev_title %}
   		{% if project.tags contains ptag %}
     	<h6 class="zephyr"><a href={{ site.baseurl }}{{ project.url }}>{{ project.title }}</a></h6>
 		<p class="caption">{{ project.short-description }}</p>
+		{% assign prev_title = project.title %}
+  		{% endif %}
+  		{% endif %}
   		{% endif %}
 		{% endfor %}
 		{% endfor %}
@@ -33,9 +39,14 @@
 	<h3><p class="zephyr">Relevant Articles</p></h3>											
 		{% for article in site.articles %}
 		{% for ptag in page.tags %}
+		{% if article.title != page.title %}
+		{% if article.title != prev_article %}
   		{% if article.tags contains ptag %}
     	<h6 class="zephyr"><a href={{ site.baseurl }}{{ article.url }}>{{ article.title }}</a></h6>
 		<p class="caption">{{ article.short-description }}</p>
+		{% assign prev_article = article.title %}
+  		{% endif %}
+  		{% endif %}
   		{% endif %}
 		{% endfor %}
 		{% endfor %}
