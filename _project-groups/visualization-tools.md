@@ -1,7 +1,6 @@
 ---
 layout: group
-title: Full Travel Model Systems
-tag: full-model-system
+title: Visualization Tools
 category: visualization
 ---
 
