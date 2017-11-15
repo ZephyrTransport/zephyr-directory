@@ -12,16 +12,29 @@ subTitle: Hope you find what you are looking for.
 <p>Welcome to the Zephyr Open Code Directory for Transportation Analysis, where you will find articles to help you navigate using, contributing, and managing open source code projects as well as many projects that we think could be broadly helpful to the transportation analysis community.
 </p>
 
+
+{% assign tags =  site.projects | map: 'tags' | join: ','  | split: ',' | sort %}
+
 <section id="projects">
-<h3><p class="zephyr">Open-Source Code</p></h3>		
-<div class="card-deck">									
+<h3><p class="zephyr">Open-Source Code</p></h3>
+<div class="card-deck">
 {% for group in site.project-groups %}
   	{% if group.front %}
+    {% assign tag_count = 0 %}
+    {% for currentTag in tags %}
+        {% if currentTag == group.category %}
+          {% assign tag_count = tag_count | plus: 1 %}
+        {% endif %}
+    {% endfor %}
+
   	<div>
   	<a href= {{ site.baseurl }}{{ group.url }}>
   	<div class="card square-card">
   		<div class="card-block">
     		<h6 class="card-title">{{ group.title }}</h6>
+         <p class="card-text card-counter">
+          <small class="text-muted">{{ tag_count }}</small>
+        </p>
 		</div>
 	</div>
 	</a>
@@ -56,5 +69,3 @@ subTitle: Hope you find what you are looking for.
 
 </div>
 <!-- /.row -->
-
-

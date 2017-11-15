@@ -1,28 +1,27 @@
 <!DOCTYPE HTML>
 <html>
 {% include head.html %}
-
+{% include js.html %}
 <body>
 {% include nav.html %}
-
+<script src="{{ site.baseurl }}/js/gitquery.js"></script>
 <div class="container-fluid" id="main">
 <div class="row">
 <div class="col-md-9">
 
-	<h3><p><a href={{ page.github }} class="btn-social"><i class="fa fa-fw fa-github"></i><a href={{ page.github }} class="zephyr">{{ page.title }}</a></a></p></h3>	
-	
+	<h3><p><a href={{ page.github }} class="btn-social"><i class="fa fa-fw fa-github"></i><a href={{ page.github }} class="zephyr">{{ page.title }}</a></a></p></h3>
+
 	<section id="project-content">
 	<p>{{ page.short-description }}</p>
-	
-	{{ content }}
+
 	</section>
-	
+
 </div>
 
 <div class="col-md-3">
 	<div>
 	<!-- Create empty arrays -->
-	<h3><p class="zephyr">Related Projects</p></h3>											
+	<h3><p class="zephyr">Related Projects</p></h3>
 		{% for project in site.projects %}
 		{% for ptag in page.tags %}
 		{% if project.title != page.title %}
@@ -38,7 +37,7 @@
 		{% endfor %}
 	</div>
 	<div>
-	<h3><p class="zephyr">Relevant Articles</p></h3>											
+	<h3><p class="zephyr">Relevant Articles</p></h3>
 		{% for article in site.articles %}
 		{% for ptag in page.tags %}
 		{% if article.title != page.title %}
@@ -54,7 +53,7 @@
 		{% endfor %}
 	</div>
 </div>
-        
+
 </div>
 
 

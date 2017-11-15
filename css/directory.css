@@ -35,20 +35,20 @@ h5,h6 {
 	font-family: "Nova Square";
 	text-transform: uppercase;
 }
-	
+
 .stretch {
 	letter-spacing: 20px;
 }
-	
+
 .no-stretch {
 		     font-stetch: normal;
 }
-	
+
 .condensed {
 		     font-stetch: ultra-condensed;
 }
 
-/* 
+/*
 NavBar
 */
 
@@ -57,7 +57,7 @@ NavBar
 	color: #00aced;
 }
 
-/* 
+/*
 Body
 */
 
@@ -66,7 +66,7 @@ body {
     padding-top: 80px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-/* 
+/*
 Footer
 */
 
@@ -112,7 +112,7 @@ footer {
     background: #fff;
 }
 
-/* 
+/*
 Items
 */
 
@@ -120,6 +120,32 @@ Items
     margin: 5px 5px 5px 5px;
     height: 10rem;
     width: 10rem;
-    background-color: #f7f7f7;
+		border-radius: 0%;
+		border-color: #00aced;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
 }
 
+.square-card:hover {
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+	border-color: #585858;
+	color: #00aced;
+}
+
+.card-title {
+ color: #00aced;
+ text-align: left;
+}
+
+.card-title:hover {
+	color: #585858;
+}
+
+.card-counter {
+	position: absolute;
+	bottom: 5px;
+	right: 15px;
+	text-align: right;
+}
