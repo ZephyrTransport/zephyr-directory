@@ -167,7 +167,20 @@ Items
 
 .card-counter {
 	position: absolute;
-	bottom: 5px;
+	box-sizing: initial;
+	font-size: 1rem;
+	color: white;
+	bottom: 25px;
 	right: 15px;
-	text-align: right;
+	text-align: center;
+	border-radius: 50%;
+	width: 1.5rem;
+  height: 1.5rem;
+  padding: 8px;
+	text-align: center;
+	background: #00aced;
+}
+
+.card-counter:hover {
+	background: #585858;
 }

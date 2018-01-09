@@ -12,9 +12,6 @@ subTitle: Hope you find what you are looking for.
 <p>Welcome to the Zephyr Open Code Directory for Transportation Analysis, where you will find articles to help you navigate using, contributing, and managing open source code projects as well as many projects that we think could be broadly helpful to the transportation analysis community.
 </p>
 
-
-{% assign tags =  site.projects | map: 'tags' | join: ','  | split: ',' | sort %}
-
 <section id="projects">
 <h3><p class="zephyr">Open-Source Code</p></h3>
 <div class="card-deck">
@@ -33,7 +30,7 @@ subTitle: Hope you find what you are looking for.
   		<div class="card-block">
     		<h6 class="card-title">{{ group.title }}</h6>
          <p class="card-text card-counter">
-          <small class="text-muted">{{ tag_count }}</small>
+          {{ tag_count }}
         </p>
 		</div>
 	</div>
