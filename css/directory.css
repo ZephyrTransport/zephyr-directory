@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
 p {
 	color: #585858;
 	font-family: Lato,"Source Sans Pro", Helvetica, sans-serif;
@@ -12,8 +13,12 @@ p {
 	line-height: 1.75;
 }
 
+a {
+	color: #0daee1;
+}
+
 h1,h2,h3,h4 {
-	font-family: "Nova Square";
+	font-family: "Cabin",sans-serif;
 	text-transform: uppercase;
 }
 
@@ -32,8 +37,9 @@ h5,h6 {
 }
 
 .zephyr {
-	font-family: "Nova Square";
+	font-family: "Cabin", sans-serif;
 	text-transform: uppercase;
+	letter-spacing: 4px;
 }
 
 .stretch {
@@ -116,7 +122,7 @@ footer {
 Items
 */
 
-.square-card {
+.xsquare-card {
     margin: 5px 5px 5px 5px;
     height: 10rem;
     width: 10rem;
@@ -127,9 +133,25 @@ Items
   	transition-duration: 0.3s;
 }
 
+
+.square-card {
+    margin: 5px 5px 5px 5px;
+    height: 10rem;
+    width: 10rem;
+		overflow: hidden;
+		border-radius: 0%;
+		border-top: solid 8px #00aced;
+		border-right-width: 0;
+		border-left-width: 0;
+		border-bottom-width: 0;
+		transition: background-color 0.3s ease;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+}
+
 .square-card:hover {
-	-webkit-transform: scale(0.95);
-	transform: scale(0.95);
 	border-color: #585858;
 	color: #00aced;
 }

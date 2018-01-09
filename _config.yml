@@ -10,7 +10,7 @@ short-title: Open Code Directory
 
 email: info@zephyrtransport.org
 author: Elizabeth Sall
-description: The Zephyr Foundation’s mission is to advance rigorous transportation and land use decision-making for the public good by advocating for and supporting improved travel analysis and facilitating its implementation. 
+description: The Zephyr Foundation’s mission is to advance rigorous transportation and land use decision-making for the public good by advocating for and supporting improved travel analysis and facilitating its implementation.
 copyright: 'Copyright &copy; 2016 Zephyr Foundation. All Rights Reserved.'
 credits: 'Site created by Elizabeth Sall, UrbanLabs LLC'
 
@@ -30,13 +30,13 @@ collections:
 #   Look Settings         #
 # ----------------------- #
 
-top-bg-img: 
-bottom-bh-img: 
-highlight-color: 00aced         #turquoise blue
-dark-gray-color: 2F4F4F         #dark gray
+top-bg-img:
+bottom-bh-img:
+highlight-color: 0daee1       #turquoise blue
+dark-gray-color: 4e4f58       #dark gray
 background-highlight: fafafa    #light gray - blueish
 highlight-text: f8f8f8          #light gray
-default-tile-img: pic07.jpg 
+default-tile-img: pic07.jpg
 
 
 # ----------------------- #
@@ -58,4 +58,3 @@ social:
     url: https://github.com/zephyrtransport
   - title: email
     url: http://eepurl.com/ccQL7z
-
