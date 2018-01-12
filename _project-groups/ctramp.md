@@ -1,14 +1,7 @@
 ---
 layout: group
 title: CTRAMP
-category: ctramp
-tags: [CT-RAMP, abm-platform ]
+category: ct-ramp
+tags: [ct-ramp, abm-platform ]
 short-description: chained travel and mobility platform
 ---
-
-
-
-
-
-
-
