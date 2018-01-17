@@ -1,6 +1,7 @@
 ---
 layout: project
-tags: [ network-models ]
+tags: [ network-model, java ]
 title: Matsim
-github: https://www.matsim.org
+github: http://www.matsim.org
+short-description: An open-source framework for implementing large-scale agent-based transport simulations.
 ---
