@@ -1,0 +1,7 @@
+---
+layout: project
+tags: [ python, network-x, network-models, osm, pandas ]
+title: OSMnx
+github: https://github.com/gboeing/osmnx
+short-description: Python for street networks. Retrieve, model, analyze, and visualize street networks and other spatial data from OpenStreetMap.
+---
