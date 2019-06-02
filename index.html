@@ -18,10 +18,15 @@ subTitle: Hope you find what you are looking for.
 {% for group in site.project-groups %}
   	{% if group.front %}
     {% assign tag_count = 0 %}
-    {% for currentTag in tags %}
-        {% if currentTag == group.category %}
+    {% for project in site.projects %}
+        {% if project.tags contains group.category %}
           {% assign tag_count = tag_count | plus: 1 %}
         {% endif %}
+    {% endfor %}
+    {% for pgroup in site.project-groups %}
+      {% if pgroup.tags contains group.category %}
+        {% assign tag_count = tag_count | plus: 1 %}
+      {% endif %}
     {% endfor %}
 
   	<div>

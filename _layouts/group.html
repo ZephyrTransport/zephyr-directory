@@ -29,6 +29,7 @@
   				<div class="card square-card">
   					<div class="card-block">
     					<h6 class="card-title">{{ group.title }}</h6>
+
 					</div>
 				</div>
 				</a>
@@ -48,6 +49,10 @@
   				<div class="card square-card">
   					<div class="card-block">
     					<h6 class="card-title">{{ project.title }}</h6>
+
+							{% if project.github %}
+								<a href={{ project.github }} class="btn-social"><i class="fa fa-fw fa-github"></i></a>
+							{% endif %}
 					</div>
 				</div>
 				</a>
