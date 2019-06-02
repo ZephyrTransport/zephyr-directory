@@ -6,15 +6,20 @@ subTitle: Hope you find what you are looking for.
 
 
 <section id="projects">
-<h3>Projects</h3>		
-<div class="card-columns">									
+<h3>Projects</h3>
+<div class="card-columns">
 	{% for project in site.projects %}
   	<div>
   	<a href= {{ site.baseurl }}{{ project.url }}>
   	<div class="card">
   		<div class="card-block">
-    		<h6 class="card-title">{{ project.title }}</h6>
+    		<h6 class="card-title">{{ project.title }}{% if project.github %}
+					<a href={{ project.github }} class="btn-social"><i class="fa fa-fw fa-github"></i></a>
+				{% endif %}</h6>
     		<p>&nbsp; &raquo; &nbsp; {{ project.short-description }}</p>
+				{% for tag in project.tags %}
+							<span class='badge badge-pill badge-primary'> {{ tag }}</span>
+				{% endfor %}
 		</div>
 	</div>
 	</a>
@@ -22,6 +27,3 @@ subTitle: Hope you find what you are looking for.
 	{% endfor %}
 </div>
 </section>
-							
-
-

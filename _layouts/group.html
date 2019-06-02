@@ -48,11 +48,14 @@
   				<a href={{ site.baseurl }}{{ project.url }}>
   				<div class="card square-card">
   					<div class="card-block">
-    					<h6 class="card-title">{{ project.title }}</h6>
-
-							{% if project.github %}
+    					<h6 class="card-title">{{ project.title }}{% if project.github %}
 								<a href={{ project.github }} class="btn-social"><i class="fa fa-fw fa-github"></i></a>
-							{% endif %}
+							{% endif %}</h6>
+
+
+							{% for tag in project.tags %}
+										<span class='badge badge-pill badge-primary'> {{ tag }}</span>
+							{% endfor %}
 					</div>
 				</div>
 				</a>
